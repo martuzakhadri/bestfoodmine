@@ -1,0 +1,33 @@
+<div class="container">
+  <img [src]="food.imageUrl" alt="food.name">
+
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{ food.name }}
+      </span>
+    </div>
+  </div>
+
+  <div class="origins">
+    <div *ngFor="let origins of food.origins">
+      <span>{{ origins }}</span>
+    </div>
+  </div>
+  <div class="tags">
+    <a *ngFor="let tag of food.tags" routerLink="/tag/{{tag}} ">
+      <span>{{ tag }}</span>
+    </a>
+  </div>
+  <div class="coock-time">
+      <span> time to cook <strong>{{food.coockTime}}</strong> </span>
+  </div>
+  <div class="price">
+    <span>
+      {{ food.price | currency }}
+    </span>
+  </div>
+  <button (click)="addToCart()">Add To cart</button>
+
+
+</div>

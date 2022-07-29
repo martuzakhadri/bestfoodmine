@@ -1,0 +1,39 @@
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+li a{
+  height: 22.5rem;
+  width: 22.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: red;
+}
+li a:hover{
+  background-color: #ccc;
+  cursor: pointer;
+}
+li a img{
+  object-fit: cover;
+  height: 14.5rem;
+}
+.content{
+  margin-top: 0.3rem;
+  padding : 0.5rem 1rem;
+position: relative;
+height: 7rem;
+}
+.favorite{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
