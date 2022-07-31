@@ -12,3 +12,5 @@ export const REGISTER_URL =  USER_URL + '/register';
 
 export const ORDERS_URL = BASE_URL+'/api/orders';
 export const ORDER_CREATE_URL = ORDERS_URL +'/create';
+export const ORDER_NEW_ORDER_CURRENT_USER_URL = ORDERS_URL +'/newOrderForCurrentUser'; 
+export const ORDER_PAY_URL = ORDERS_URL +'/pay'; 

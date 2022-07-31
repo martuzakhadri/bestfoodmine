@@ -30,6 +30,8 @@ import { CheckOutComponent } from './components/pages/check-out/check-out.compon
 import { OrderItemsListComponent } from './components/partials/order-items-list/order-items-list.component';
 import { MapComponent } from './components/partials/map/map.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { PaymentPageComponent } from './components/pages/payment-page/payment-page.component';
+import { PaypalComponent } from './components/partials/paypal/paypal.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { AuthInterceptor } from './auth/auth.interceptor';
     CheckOutComponent,
     OrderItemsListComponent,
     MapComponent,
+    PaymentPageComponent,
+    PaypalComponent,
 
   ],
   imports: [

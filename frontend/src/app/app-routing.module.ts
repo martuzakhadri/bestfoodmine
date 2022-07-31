@@ -6,6 +6,7 @@ import { CheckOutComponent } from './components/pages/check-out/check-out.compon
 import { FoodPageComponent } from './components/pages/food-page/food-page.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
+import { PaymentPageComponent } from './components/pages/payment-page/payment-page.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'login', component:LoginPageComponent},
   {path:'register', component:RegisterComponent},
   {path:'checkout', component:CheckOutComponent,canActivate:[AuthGuard]},
+  {path:'payment', component:PaymentPageComponent,canActivate:[AuthGuard]},
 ];
 
 @NgModule({
